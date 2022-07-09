@@ -1,0 +1,183 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+}
+
+.cabecalho{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+    height: 70px;
+}
+
+.cabecalho a{
+    text-decoration: none;
+    color: black;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0 10px;
+}
+
+.perfil{
+    background-color: purple;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-right: 20px;
+    position: relative;
+    cursor: pointer;
+}
+
+i{
+    font-size: 20px;
+}
+
+.perfil p{
+    color: #fff;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+main{
+    width: 100%;
+    height: calc(100% - 70px);
+}
+
+.logo img{
+    position: absolute;
+    max-width: 300px;
+    width: 100%;
+    left: 50%;
+    transform: translate(-50%,0);
+}
+
+.form{
+    display: flex;
+    position: absolute;
+    top: 200px;
+    left: 50%;
+    transform: translate(-50%,0);
+    flex-direction: column;
+}
+
+.form input{
+    width: 600px;
+    outline: none;
+    border: 1px solid #ccc;
+    height: 40px;
+    padding: 10px;
+    border-radius: 25px;
+    font-size: 16px;
+}
+
+.buttons{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.buttons button{
+    margin: 0 10px;
+    font-size: 14px;
+    background: rgb(241, 240, 240);
+    border: none;
+    outline: none;
+    padding: 8px 12px;
+    cursor: pointer;
+}
+
+.informacoes{
+    width: 100%;
+    position: absolute;
+    top: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.informacoes h1{
+    font-size: 13px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 200;
+}
+
+.rodape{
+    opacity: .7;
+    background: rgb(241, 240, 240);
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+}
+
+.pais{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    margin: 10px 20px;
+}
+
+.info_rodape{
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-between;
+    margin:10px 20px;
+}
+
+.first a{
+    margin: 0 15px;
+    text-decoration: none;
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+}
+
+.secund a{
+    color: black;
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    margin: 0 15px;
+}
+
+@media screen and (max-width:814px){
+    .info_rodape{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .first{
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (max-width:603px){
+    .form input{
+        width:500px;
+    }
+    .info_rodape{
+        margin: 0;
+    }
+}
+
+@media screen and (max-width:500px){
+    .form input{
+        width: 400px;
+    }
+}
+
+@media screen and (max-width:399px){
+    .form input{
+        width: 360px;
+    }
+}
